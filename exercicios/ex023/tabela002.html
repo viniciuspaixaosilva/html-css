@@ -12,6 +12,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -28,9 +34,10 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População de SP e MG</caption>
         <thead>
-            <th>Unidade federativa</th>
-            <th>População</th>
+            <th scope="col">Unidade federativa</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -43,7 +50,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total da População</th>
+            <th scope="row">Total da População</th>
             <td class="num"><strong>60.859.529</strong></td>
         </tfoot>
     </table>
